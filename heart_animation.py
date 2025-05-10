@@ -14,8 +14,8 @@ while running:
                 running=False
     if movement<(900):
         heartcurve=(960+movement-((movement/30)**2),700-movement+((movement/110)**3))   
-        pygame.draw.circle(screen,(220,50,50),heartcurve,10)
-        pygame.draw.circle(screen,(220,50,50),(1920-heartcurve[0],heartcurve[1]),10)
+        pygame.draw.circle(screen,(220,50,50),heartcurve,30)
+        pygame.draw.circle(screen,(220,50,50),(1920-heartcurve[0],heartcurve[1]),30)
     else:
         screen.blit(font.render('Happy Mothers day! :)',False,(0,0,0)),(400,700))
     clock.tick(180)
